@@ -147,9 +147,34 @@ namespace Day23practiceProb
                     rc++;
                 }
             }
+        }
+        //Sorting the Contacts name by Alphabetic Order
+        public void SortContacts()
+        {
+            //Sorting and string in list
+            List<Contacts> contacts = records.OrderBy(x => x.firstName).ToList();
 
+            Console.WriteLine("Displaying Sorted Contact list in Alphabetic Order");
+            int rc = 1;
 
+            //Displaying List
+            foreach (Contacts contact in contacts)
+            {
+                Console.WriteLine("\n\nRecord:-" + rc);
+                Console.WriteLine("First name is: " + contact.firstName);
+                Console.WriteLine("Last name is: " + contact.lastName);
+                Console.WriteLine("Address : " + contact.address);
+                Console.WriteLine("City : " + contact.city);
+                Console.WriteLine("State : " + contact.state);
+                Console.WriteLine("Email : " + contact.email);
+                Console.WriteLine("Zip code : " + contact.zip);
+                Console.WriteLine("Phone Number : " + contact.phoneNumber);
+                rc++;
+            }
         }
 
+
+        
+
     }
-}    
+}   
