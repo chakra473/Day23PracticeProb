@@ -33,6 +33,7 @@ namespace Day23practiceProb
                 Console.WriteLine("Phone Number : " + person.phoneNumber);
                 Console.WriteLine();
                 reco++;
+                Console.WriteLine();
 
             }
         }
